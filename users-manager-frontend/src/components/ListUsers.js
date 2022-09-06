@@ -1,5 +1,7 @@
 import React, {useState} from "react"
 import User from "./User";
+import Footer from "./Footer";
+import HeaderListUsers from "./HeaderListUsers"
 
 export default function ListUsers(){
     const [users, setUsers] = useState([""])
@@ -11,6 +13,8 @@ export default function ListUsers(){
 
     return (
         <>
+            <HeaderListUsers />
+
             {
                 users.map(user =>{
                     return (
@@ -26,6 +30,7 @@ export default function ListUsers(){
                 })
             }
 
+            <Footer />
         </>
     )
 }

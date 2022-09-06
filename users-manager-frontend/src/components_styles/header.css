@@ -1,0 +1,44 @@
+.header {
+    height: 70px;
+    max-width: 100%;
+    background: #002365;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+
+}
+
+.title{
+    margin-left: 60px;
+}
+
+.sections > li {
+    margin-right: 60px;
+    list-style-type: none;
+}
+
+.sections >li > a {
+    text-decoration: none;
+    padding:10px;
+    color:#d4d4d2;
+    border: 3px solid #d4d4d2;
+    font-size:22px;
+}
+
+.sections >li > a:hover {
+    color: #002365;
+    background-color: #d4d4d2;
+}
+
+@media screen and (max-width: 700px){
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .sections > li > a {
+        font-size: 20px;
+    }
+
+}

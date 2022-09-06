@@ -1,0 +1,45 @@
+.user{
+    margin:30px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.userData{
+    font-size: 20px;
+}
+
+.updateBtn, .deleteBtn{
+    border: 1px solid #1E1E24;
+    border-radius: 8px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 700;
+    width: 120px;
+    color:#1E1E24;
+}
+
+.updateBtn{
+    background: #f5df85;
+    margin-right: 10px;
+}
+
+.deleteBtn{
+    background: #ff5530;
+    margin-left: 10px;
+}
+
+.closeBtn{
+    border: 1px solid #1E1E24;
+    border-radius: 8px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 700;
+    width: 120px;
+    color:#d4d4d2;
+    background: #272739 ;
+
+}
+
+.closeDeleteBtn{
+    display: none;
+}

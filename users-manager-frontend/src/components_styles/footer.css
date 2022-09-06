@@ -1,0 +1,21 @@
+footer {
+    margin-top:20px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 400;
+    background-color: #002365;
+    color:#d4d4d2;
+}
+.author_link{
+    text-decoration: none;
+    color:inherit;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.author_link:hover{
+    color:#54749b;
+}

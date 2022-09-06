@@ -38,7 +38,7 @@ export default function UpdateUser(props){
     }
 
     return(
-        <div>
+        <div className="updateUser">
             <label>
                 Name
             </label>
@@ -73,13 +73,14 @@ export default function UpdateUser(props){
                 Premium
             </label>
             <input
+                className="checkbox"
                 type="checkbox"
                 name = "premium"
                 checked = {formData.premium}
                 onChange={handleChange}
             />
 
-            <button onClick={updateUser}>Update user</button>
+            <button onClick={updateUser} className="updateClassBtn">Update user</button>
         </div>
     )
 }

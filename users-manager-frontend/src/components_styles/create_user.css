@@ -1,0 +1,92 @@
+.create-user {
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    max-width: 100%;
+}
+label {
+    font-size:20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 110px;
+    background: white;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    border: 3px solid #1E1E24;
+    border-radius: 15px;
+}
+
+.form-title{
+    margin-top :0;
+    font-size:35px;
+}
+
+.createBtn {
+    border: 1px solid #1E1E24;
+    border-radius: 8px;
+    height: 40px;
+    font-size: 25px;
+    background: #d4d4d2;
+    color:#1E1E24;
+    font-weight: 700;
+    width: 240px;
+    margin-bottom: 15px;
+}
+
+.createBtn:hover{
+    height: 50px;
+    width: 260px;
+}
+
+.updateClassBtn{
+    border: 1px solid #1E1E24;
+    border-radius: 8px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 140px;
+    color:#1E1E24;
+    background: #f5df85;
+    margin-left: -20px;
+}
+
+.updateUser{
+    margin-top:10px;
+    padding:10px;
+    border: 1px solid #1E1E24;
+    border-radius: 5px;
+}
+
+input{
+    border: 1px solid #1E1E24;
+    height: 35px;
+    width:240px ;
+    border-radius: 15px;
+    margin:10px;
+}
+
+input:hover {
+    background-color: #272739;
+    color:white;
+}
+
+.checkbox{
+    margin-left: -90px;
+    height: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .form{
+        padding:5px 20px;
+        margin-top:40px;
+
+    }
+}

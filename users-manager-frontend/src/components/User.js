@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import UpdateUser from "./UpdateUser";
+import "../components_styles/user.css"
 
 export default function User(props){
     const {name, surname, registrationDate, premium, id} = props
@@ -22,13 +23,15 @@ export default function User(props){
     }
 
     return (
-        <div>
-            <p>{name}</p>
-            <p>{surname}</p>
-            <p>{registrationDate}</p>
-            <p>{premium === true ? "True" : "False"}</p>
-            <button onClick={handleUpdate}>{update ? "Close" : "Update"}</button>
-            <button onClick={handleDelete}>Delete</button>
+        <div className="user">
+            <div className="userData">
+                <p>Name: {name}</p>
+                <p>Surname: {surname}</p>
+                <p>Registration Date: {registrationDate}</p>
+                <p>Premium: {premium === true ? "Yes" : "No"}</p>
+            </div>
+            <button onClick={handleUpdate} className={update ? "closeBtn" : "updateBtn"}>{update ? "Close" : "Update"}</button>
+            <button onClick={handleDelete} className={update ? "closeDeleteBtn" : "deleteBtn"} >Delete</button>
             {update ? <UpdateUser
                 name = {name}
                 surname = {surname}
