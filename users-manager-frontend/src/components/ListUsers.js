@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useEffect, useState} from "react"
 import User from "./User";
 import Footer from "./Footer";
 import HeaderListUsers from "./HeaderListUsers"
@@ -6,10 +6,11 @@ import HeaderListUsers from "./HeaderListUsers"
 export default function ListUsers(){
     const [users, setUsers] = useState([""])
 
-
+    useEffect(()=>{
         fetch("http://localhost:8080/api/users")
             .then(res => res.json())
             .then(data => setUsers(data))
+    })
 
     return (
         <>
